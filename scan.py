@@ -6,8 +6,8 @@ from PIL import Image, ImageEnhance, ImageFilter
 def extract_text():
 
     # Set pytesseract language to English, German, and an additional language for handwriting
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Users\Alexander\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
-    tessdata_dir_config = '--tessdata-dir "C:\\Users\\Alexander\\AppData\\Local\\Programs\\Tesseract-OCR\\tessdata" --oem 3 --psm 6 -l eng+deu+script/Latin'
+    pytesseract.pytesseract.tesseract_cmd = r"C:\Users\AppData\Local\Programs\Tesseract-OCR\tesseract.exe"
+    tessdata_dir_config = '--tessdata-dir "C:\\Users\\AppData\\Local\\Programs\\Tesseract-OCR\\tessdata" --oem 3 --psm 6 -l eng+deu+script/Latin'
 
     # Take a screenshot
     screenshot = pyautogui.screenshot()
